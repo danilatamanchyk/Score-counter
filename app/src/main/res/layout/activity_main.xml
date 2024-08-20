@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewScore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score 1:"
+        android:textColor="@color/red"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:padding="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewScore2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewScore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:text="Score 2:"
+        android:textColor="@color/green"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewScore1"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textViewCount1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="0"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCount2"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewScore1" />
+
+    <TextView
+        android:id="@+id/textViewCount2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        tools:text="0"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/textViewCount1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewScore2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
